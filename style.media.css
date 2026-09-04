@@ -1,0 +1,320 @@
+@media (max-width: 1200px){
+    .conteiner, .screan_1_conteiner, .screan_2_container, .screan_3_container, .screan_4_container, .screan_5_container, .screan_6_container, .footer_container, .dop_box{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media (max-width: 769px) {
+    /* Styles for mobile devices */
+    .container {
+        width: 100%;
+        padding: 20px 0px;
+}
+.hedertop {
+    width: 100%;
+}
+.about_image {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    img {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    z-index: 0;
+    }
+}
+.about_item {
+    width: 60%;  
+    height: 550px; 
+    gap: 50px;  
+}
+.about_box_text {
+    width: 100%;
+    padding: 0 20px;
+    height: 550px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+    object-fit: cover;
+    z-index: 1;
+}
+.firmu{
+   overflow: hidden;
+   color: #fff;
+}
+.buttons {
+    display: none;
+}
+    header {
+        height: auto;
+        padding: 12px 0;
+    }
+    .headertop {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .buttons {
+        display: none;
+    }
+    .headertop > .button_get_starting {
+        display: none;
+        padding: 10px 0px;
+    }
+    .burger {
+        display: flex;
+    } 
+    .e1_t1{
+        width: 440px;
+        
+    }  
+    .e2_t1 {
+        width: 60%;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+        width: 100%;
+    }
+    .card {
+        width: 60%;
+        
+    }
+    .illustration{
+        height: auto;
+    }
+    .use-case-coteiner{
+        width: 100%;
+    }
+    .use_case_cards{
+        display:none;
+    }
+    .use_case_content{
+        margin-top: 40px;
+    }
+    .use_case_text_2{
+        width: 100%;
+        font-size: 20px;
+    }
+    .use_case{
+        margin-top: 40px;
+    }
+    .use_case{
+        height: auto;
+    }
+    .especials_card_content{
+        width: 100%;
+        flex-direction: column;
+        items-align: center;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .especial_card_1,.especial_card_2,.especial_card_3{
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    .especial_card_text_1{
+        font-size: 25px;
+    }
+    .especial_card_text_2{
+        font-size: 20px;
+    }
+    .especials_card{
+        height: auto;
+    }
+    .card_add_gpu_image{
+        display: none;
+    }
+    .earn_cards{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .card_add_gpu{
+        padding: 10px;
+        height: 250px;
+    }
+    .card_add_gpu_content{
+        width: 100%;
+        padding: 0px 20%;
+        justify-content: left;
+    }
+    .earn_card1{
+        width: 90%;
+        background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 20px;
+    }
+    .earn_card_image{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+    .earn_card2{
+        width: 90%;
+        background-repeat: no-repeat;
+        padding: 0px 20px ;
+    }
+    .faq_banner{
+        padding: 0px 0px;
+    }
+    .faq_banner_content
+    {
+        width: 100%;
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 7% 0px;
+    }
+    .footer_top{
+        flex-wrap: wrap;
+        padding: 0px 15%;
+        justify-content: center;
+    }
+    .footer_logo{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 450px){
+  .about_image{
+        display: none;
+    }
+    .earn_card_image{
+        display: none;
+    }
+    .e1_t1{
+       font-size: 50px;
+       max-width: 440px;
+        width: 100%;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .mobile_menu{
+        padding: 5px 0px;
+    }
+    .mobile_menu_actions {
+        flex-direction: column;
+    }
+    .mobile_menu_actions .button_get_starting,
+    .mobile_menu_actions .book_a_demo {
+        width: 100%;
+        justify-content: center;
+    }
+    .about_image {
+        display: none;
+    }
+    .about_item {
+        width: 100%;
+        height: auto;
+    }
+    .about_box_text {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 20px;
+        gap: 20px;
+        height: 450px;
+    }
+    .e1_t1 {
+        font-size: 40px;
+        line-height: 40px;
+        word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-top: 90px;
+    width: 100%;
+
+    }
+    .e1_t2 {
+        font-size: 20px;
+    }
+    .buttons_2 {
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .about{
+        height: auto;
+    }
+     .cards{
+        padding: 0px 10px;
+        width: 100%;
+        margin-top: 20px;
+     }
+     .firmu{
+        margin-top: 20px;
+     }
+     .e2_t1 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .card_text_t1 {
+        font-size: 20px;
+    }
+    .card{
+        padding: 15px;
+        height: auto;
+        width: 75%;
+    }
+    .card_text{
+        margin-top: 20px;
+    }
+    .card {
+        width: 90%;
+        
+    }
+    .use_case_content{
+        width: 95%;
+        display: flex;
+        align-items: center;
+    }
+    .especial_card_1,.especial_card_2,.especial_card_3{
+    width: 90%;
+    }
+    .especials_card_content{
+        padding: 0px 10px;
+    }
+    .banner_call_content{
+        margin-top: 40px;
+    }
+    .especials_card_text{
+        text-align: center;
+    }
+    .banner_call_text_2{
+        width: 90%;
+    }
+    .banner_call_text_1{
+        width: 90%;
+        text-align: center;
+    }
+    .faq_banner_text2{
+        width: 70%;
+    }
+    .card_add_gpu{
+        height: 290px;
+    }
+    .earn_card_image{
+        display: none;
+    }
+}
