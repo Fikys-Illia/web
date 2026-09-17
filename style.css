@@ -34,14 +34,12 @@ header{
     width: 100%;
 }
 .button_home{
-  color: white;
+  color: rgb(255, 255, 255);
 text-indent: 10px;
 width: 100px;
 height: 27px;
 border-radius: 60px;
 align-items: center;
-box-shadow: 0 -1px 0 1px rgba(9, 61, 152, 0.8);
-background: radial-gradient(165.22% 165.22% at 50% 67.39%, #030f24 33.97%, #0e419a 51.2%, #030f24 98.56%);
 }
 .buttons{
     display: flex;
@@ -607,4 +605,36 @@ color: rgba(245, 247, 248, 0.5);
 .footer_copy {
   color: rgba(245, 247, 248, 0.25);
   font-size: 13px;
+}
+
+.buttons .button.active,
+.buttons .button_home.active,
+.mobile_menu_buttons .button.active,
+.mobile_menu_buttons .button_home.active {
+    background: radial-gradient(165.22% 165.22% at 50% 67.39%, #030f24 33.97%, #0e419a 51.2%, #030f24 98.56%);
+    box-shadow: 0 -1px 0 1px rgba(9, 61, 152, 0.8);
+    border-radius: 60px;
+    color: white;
+    padding: 5px 12px;
+    width: fit-content;
+}
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(231deg, #010101 0%, #031736 72.12%, #052c6b 100%);
+    border: 1px solid #0a264e;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 9999;
+    pointer-events: none;
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
 }

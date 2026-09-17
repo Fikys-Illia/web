@@ -13,14 +13,14 @@
     <header>
         <div class="container">
             <div class="headertop">
-                <div class="logo"> <img src="image/icons.svg" alt="1"></div>
+                <div class="logo" onclick="scrollToSection('home')"><img src="image/icons.svg" alt="1"></div>
                 <div class="buttons">
-                    <div class="button_home"> <img src="image/home.svg" alt=""> Головна</div>
-                    <div class="button">Продукт v</div>
-                    <div class="button">Компанія v</div>
-                    <div class="button">Документи</div>
+                    <div class="button_home" data-section="home" onclick="scrollToSection('home')"><img src="image/home.svg" alt=""> Головна</div>
+                    <div class="button" data-section="product" onclick="scrollToSection('product')">Продукт v</div>
+                    <div class="button" data-section="company" onclick="scrollToSection('company')">Компанія v</div>
+                    <div class="button" data-section="docs" onclick="scrollToSection('docs')">Документи</div>
                 </div>
-                <div class="button_get_starting">Розпочати</div>
+                <div class="button_get_starting" onclick="showToast()">Розпочати</div>
                 <div class="burger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -29,15 +29,15 @@
             </div>
             <div class="mobile_menu" id="mobileMenu">
                 <div class="mobile_menu_buttons">
-                    <div class="button_home"><img src="image/home.svg" alt=""> Головна</div>
-                    <div class="button">Продукт v</div>
-                    <div class="button">Компанія v</div>
-                    <div class="button">Документи</div>
+                    <div class="button_home" data-section="home"onclick="scrollToSection('home')"><img src="image/home.svg" alt=""> Головна</div>
+                    <div class="button" data-section="product" onclick="scrollToSection('product')">Продукт v</div>
+                    <div class="button" data-section="company" onclick="scrollToSection('company')">Компанія v</div>
+                    <div class="button" data-section="docs" onclick="scrollToSection('docs')">Документи</div>
                 </div>
             </div>
         </div>
     </header>    
-    <div class="about">
+    <div class="about" id="home">
         <div class="container">
             <div class="about_item">
                 <div class="about_box_text">
@@ -45,8 +45,7 @@
                             <div class="e1_t2">Масштабуйте свої AI-навантаження з миттєвим доступом до обчислень корпоративного рівня за ціною до 70% нижчою.</div>
 
                         <div class="buttons_2">
-                             <div class="button_get_starting">Розпочати</div>
-                          <!-- <button class="get_started"></button> -->
+                             <div class="button_get_starting" onclick="showToast()">Розпочати</div>
                             <div class="book_a_demo">Замовити демо</div>
                         </div>
                 </div>
@@ -67,7 +66,7 @@
             </div>
         </div>
     </div>
- <div class="illustration">
+ <div class="illustration" id="product">
         <div class="container">
             <div class="title">
                 <div class="e2_t1">Створено для AI-команд, а не для надприбутків великих корпорацій</div>
@@ -97,13 +96,13 @@
             </div>
         </div>
     </div>
-   <div class="use_case">
+   <div class="use_case" id="company">
         <div class="container">
         <div class="use-case-coteiner">
             <div class="use_case_content">
                 <div class="use_case_text_1">GPU у 130+ країнах</div>
                 <div class="use_case_text_2">Підтримує широку мережу GPU по всьому світу — з неперевершеною швидкістю, стабільністю та доступністю.</div>
-                <div class="button_get_starting">Розпочати</div>
+                <div class="button_get_starting" onclick="showToast()">Розпочати</div>
             </div>
     <div class="use_case_cards"> 
                 <img src="image/ecran_2.21.svg" alt="">
@@ -111,7 +110,7 @@
         </div>
         </div> 
     </div>
-    <div class="especials_card">
+    <div class="especials_card" id="docs">
         <div class="container">
             <div class="title">
                 <div class="especials_card_text">Розгортайте як вам зручно </div>
@@ -206,7 +205,7 @@
                 <div class="faq_banner_text1">Питання?</div>
                 <div class="faq_banner_text2">Приєднуйтесь до нас у Discord або замовте демо, щоб дізнатися, як ми можемо покращити ваші AI-проєкти.</div>
                 <div class="faq_banner_buttons">
-                    <div class="button_get_starting">Розпочати</div>
+                    <div class="button_get_starting" onclick="showToast()">Розпочати</div>
                     <div class="book_a_demo">Замовити демо</div>
                 </div>
             </div>
@@ -265,7 +264,10 @@
                 <div class="footer_copy">Copyright io.net,inc.</div>
             </div>
         </div>
-    </footer> -->
+    </footer> 
+<div class="toast" id="toast">
+    Дякуємо! Ми зв'яжемось з вами найближчим часом 🚀
+</div>
 </body>
 </html>
 

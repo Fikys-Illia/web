@@ -23,20 +23,6 @@ document.addEventListener('click', function(e) {
         spans[2].style.transform = '';
     }
 });
-// function(){
-//     let top=$("#top");
-//     let topH=top.height();
-//     let header=$("#header");
-//     let scrollTop=$(window).scrollTop();
-//     $(window).scroll(function(){
-//         scrollTop=$(this).scrollTop();
-//         if(scrollTop>topH){
-//             header.addClass("fixed");
-//         }else{
-//             header.removeClass("fixed");
-//         }
-//     })
-// };
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     const about = document.querySelector('.about');
@@ -54,3 +40,43 @@ window.addEventListener('scroll', function() {
     }
     console.log('Scroll position:', window.scrollY, 'About height:', aboutHeight);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.about, .illustration, .use_case, .especials_card');
+    const menuButtons = document.querySelectorAll('.buttons [data-section], .mobile_menu_buttons [data-section]');
+
+    window.addEventListener('scroll', function() {
+        let current = '';
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight / 2) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        console.log('current:', current, 'sections found:', sections.length, 'buttons found:', menuButtons.length);
+
+        menuButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-section') === current) {
+                btn.classList.add('active');
+            }
+        });
+    });
+});
+
+function showToast() {
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    setTimeout(function() {
+        toast.classList.remove('show');
+    }, 3000);
+}
+
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
